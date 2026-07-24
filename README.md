@@ -4,6 +4,10 @@ A beginner-friendly but production-inspired **end-to-end data engineering projec
 
 This project was built to strengthen my understanding of modern data engineering concepts and to demonstrate practical experience with **Airflow, dbt, Databricks, PostgreSQL, AWS S3, Docker, and dimensional modeling**.
 
+## Architecture
+
+![Walmart Data Engineering Architecture](walmart-data-engineering-architecture.png)
+
 ## Business Problem
 
 Retail data commonly arrives from multiple systems and in different formats. Raw operational data is often not immediately suitable for reporting, analytics, or conversational SQL use cases.
