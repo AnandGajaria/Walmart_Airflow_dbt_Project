@@ -181,50 +181,6 @@ Through this project, I practiced:
 └── README.md
 ```
 
-## Challenges and Learnings
-
-Some of the most valuable learning areas in this project were:
-
-- Coordinating an external Databricks job from an Airflow task
-- Waiting for ingestion completion before starting transformations
-- Structuring dbt models into technical, business, and analytical layers
-- Deciding where tests should run in the pipeline
-- Managing Airflow and dbt paths inside Docker containers
-- Understanding the difference between orchestration, processing, and transformation
-
-## Current Scope
-
-This is a learning and portfolio project. It demonstrates the core workflow and architecture rather than a fully production-hardened platform.
-
-For a production implementation, I would additionally introduce:
-
-- Airflow Connections or a secrets manager for credentials
-- Environment-specific dbt targets
-- CI/CD checks for dbt models and Airflow DAGs
-- Centralized logging and alerting
-- Incremental dbt models where appropriate
-- Stronger observability and data-quality reporting
-- Infrastructure as code
-- Role-based access controls
-- Automated unit and integration tests
-
-## Interview Summary
-
-A simple way to describe this project in an interview:
-
-> I built an end-to-end retail data pipeline using Airflow, Databricks, and dbt. Data is ingested incrementally from PostgreSQL and in batches from S3. Airflow triggers the ingestion job and then runs source-freshness checks, layered dbt transformations, automated tests, snapshots, and Gold fact and dimension models. The main goal was to learn how ingestion, orchestration, transformation, data quality, and dimensional modeling work together in a modern data platform.
-
-## What I Would Improve Next
-
-My next improvements would be to:
-
-1. Move Databricks credentials and job configuration out of the DAG.
-2. Add CI checks for `dbt build` and Airflow DAG validation.
-3. Add pipeline alerts for failed or delayed tasks.
-4. Add more business-focused dbt tests.
-5. Add screenshots of the Airflow DAG, dbt lineage, and final tables.
-6. Document the data model and sample analytical use cases.
-
 ## Acknowledgement
 
 This project was created as a hands-on learning exercise to build practical data engineering skills and to understand how modern tools work together in an end-to-end pipeline.
