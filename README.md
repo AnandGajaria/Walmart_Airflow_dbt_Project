@@ -165,8 +165,6 @@ Through this project, I practiced:
 │   ├── Dockerfile
 │   ├── docker-compose.yaml
 │   └── requirements.txt
-├── assets/
-│   └── walmart-data-engineering-architecture.png
 └── README.md
 ```
 
