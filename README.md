@@ -4,17 +4,6 @@ A beginner-friendly but production-inspired **end-to-end data engineering projec
 
 This project was built to strengthen my understanding of modern data engineering concepts and to demonstrate practical experience with **Airflow, dbt, Databricks, PostgreSQL, AWS S3, Docker, and dimensional modeling**.
 
-## Architecture
-
-![Walmart Data Engineering Architecture](assets/walmart-data-engineering-architecture.png)
-
-The architecture combines two ingestion patterns:
-
-- **CDC ingestion** from PostgreSQL for incremental operational data.
-- **File ingestion** from AWS S3 for batch-based source data.
-
-The data is processed in Databricks, transformed and tested with dbt, and orchestrated end to end using Apache Airflow.
-
 ## Business Problem
 
 Retail data commonly arrives from multiple systems and in different formats. Raw operational data is often not immediately suitable for reporting, analytics, or conversational SQL use cases.
