@@ -164,7 +164,7 @@ Through this project, I practiced:
 
 ```text
 .
-├── airflow_dbt_project/
+├── airflow/
 │   ├── dags/
 │   │   └── orchestrate.py
 │   ├── walmart_project/
